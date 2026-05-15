@@ -1,21 +1,5 @@
-const projects = [
-    {
-        name: 'Chess Platform',
-        description:
-            'a real-time PvP chess platform where you can play anyone, anywhere. built on a rust-based WebSocket service for low-latency gameplay. the interesting bit? post-game analysis powered by an LLM with a RAG pipeline, it compares your moves against stored embeddings and tells you exactly where things went wrong. WebAssembly handles the performance-critical client-side bits.',
-        tech: ['Next.js', 'Rust', 'TypeScript', 'WebAssembly', 'Node.js', 'PostgreSQL', 'pgvector', 'MongoDB', 'Kubernetes'],
-        github: 'https://github.com/Nihal-Ahamed-MS/chess-ai',
-        live: 'https://chess-ai-1-7wvw.onrender.com/',
-    },
-    {
-        name: 'Claude-Guardian',
-        description:
-            'a lightweight background daemon written in rust that sits quietly, intercepting claude code hooks before requests reach anthropic\'s servers, detecting and masking API keys, bearer tokens, AWS credentials, and IP addresses. TypeScript powers the real-time monitoring dashboard; SQLite logs every intercepted event.',
-        tech: ['Rust', 'TypeScript', 'SQLite', 'Docker'],
-        github: 'https://github.com/Nihal-Ahamed-MS/claude-guardian',
-    },
-];
-
+import Image from 'next/image';
+import FolderAnimation from '@/app/components/FolderAnimation';
 
 export default function Page() {
     return (
@@ -28,7 +12,7 @@ export default function Page() {
                     backgroundRepeat: 'repeat',
                     backgroundPosition: 'left top',
                     backgroundSize: '51.2px',
-                    opacity: "0.45",
+                    opacity: '0.45',
                     backgroundImage:
                         'url("https://framerusercontent.com/images/4FO4BnAJbz9awqCpxLhTlvveF4s.png")',
                     pointerEvents: 'none',
@@ -39,8 +23,11 @@ export default function Page() {
                 <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
                     <span className="font-semibold tracking-tight text-stone-900">nihal.</span>
                     <div className="flex gap-6 text-sm text-stone-500">
-                        <a href="#work" className="transition-colors hover:text-amber-600">
+                        <a href="/work" className="transition-colors hover:text-amber-600">
                             work
+                        </a>
+                        <a href="/writing" className="transition-colors hover:text-amber-600">
+                            writing
                         </a>
                         <a href="#contact" className="transition-colors hover:text-amber-600">
                             contact
@@ -50,21 +37,45 @@ export default function Page() {
             </nav>
 
             <main className="mx-auto max-w-2xl px-6">
-                <section className="pb-16 pt-36">
-                    <p className="mb-5 text-xs font-medium uppercase tracking-widest text-stone-400">
+                <section className="pt-36 pb-16">
+                    <p className="mb-5 text-xs font-medium tracking-widest text-stone-400 uppercase">
                         bengaluru, india
                     </p>
                     <h1 className="mb-6 text-5xl font-bold tracking-tight text-stone-900">
                         hi, i&apos;m nihal.
                     </h1>
                     <div className="space-y-4 text-lg leading-relaxed text-stone-600">
-                        <p>
-                            senior software engineer & tech lead with 4+ years building things that scale. right
-                            now i&apos;m a tech lead at{' '}
-                            <span className="font-semibold text-stone-900">apiwiz</span>, leading an API
-                            orchestration platform that ships to 200+ customers across APAC and the Middle East
-                            and we made it into the{' '}
-                            <span className="font-medium text-amber-600">gartner magic quadrant 2025</span>.
+                        <p className="">
+                            senior software engineer & tech lead with 4+ years building things that
+                            scale. right now i&apos;m at{' '}
+                            <span className="font-semibold text-stone-900">apiwiz</span>, leading an
+                            API orchestration platform that ships to 200+ customers across APAC and
+                            the Middle East and we made it into the{' '}
+                            <a
+                                href="https://www.gartner.com/document/7020998?ref=solrAll&refval=500152819&toggle=1&viewType=Full"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative font-medium text-amber-600"
+                            >
+                                gartner magic quadrant 2025
+                                <svg
+                                    className="pointer-events-none absolute -bottom-2.5 left-0 w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                    height="10"
+                                    viewBox="0 0 200 10"
+                                    preserveAspectRatio="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0,6 C5,2 12,9 22,5 C30,2 38,8 48,6 C57,3 63,8 74,5 C83,2 90,9 102,5 C111,2 119,8 130,6 C139,3 147,8 157,5 C165,2 174,9 184,5 C191,2 197,7 200,5"
+                                        fill="none"
+                                        stroke="#ccb41a"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                            .
                         </p>
                     </div>
                     <div className="mt-8 flex items-center gap-3">
@@ -75,122 +86,87 @@ export default function Page() {
                     </div>
                 </section>
 
-                <div className="border-t border-stone-200" />
+                <div className="border-t border-stone-200 pb-12" />
 
-                <section className="space-y-4 py-16 text-base leading-relaxed text-stone-600">
-                    <p className="mb-6 text-xs font-medium uppercase tracking-widest text-stone-400">about</p>
+                <section className="pb-12 space-y-4 text-2xl font-semibold leading-relaxed text-stone-800 [word-spacing:0.8rem]">
+                    <p className="leading-[2]">
+                        i architect scalable application which makes developers love me more than
+                        their girlfriends. the best codebases i&apos;ve shipped were never written alone,{' '}
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7279855739458727936/" target="_blank" rel="noopener noreferrer" className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
+                            <Image
+                                src="/assets/team.jpeg"
+                                alt="the team"
+                                width={80}
+                                height={55}
+                                className="object-cover block"
+                                style={{ width: 80, height: 55 }}
+                            />
+                        </a>{' '}
+                        Aristotle had it right — &ldquo;the whole is greater than the sum of its parts.&rdquo;
+                    </p>
+
+                    <p className="leading-[2.2]" style={{ marginTop: "3rem" }}>
+                        if i am AFK (away from keyboard) you can find me at badminton or at chessboard.{' '}
+                        <span className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
+                            <Image
+                                src="/assets/badminton.jpg"
+                                alt="badminton court"
+                                width={40}
+                                height={50}
+                                className="object-cover block"
+                                style={{ width: 40, height: 50 }}
+                            />
+                        </span>{' '}
+                        the strategy, the patterns, the endgames it&apos;s not too different from
+                        system design, honestly.
+                    </p>
+
+                    <p className="leading-[2.3]" style={{ marginTop: "3rem" }}>
+                        enough of bragging about myself, let&apos;s talk business{' '}
+                        <span className="inline-block align-middle mx-2">
+                            <FolderAnimation />
+                        </span>
+                        i've been building product around LLM to ease my development and helping community to building DeFi apps with Rust
+                    </p>
+                </section>
+
+                {/* <section className="space-y-4 py-16 text-base leading-relaxed text-stone-600">
+                    <p className="mb-6 text-xs font-medium tracking-widest text-stone-400 uppercase">
+                        about
+                    </p>
                     <p>
                         i&apos;m the kind of engineer who obsesses over numbers.{' '}
-                        <span className="font-medium text-stone-900">8x render-blocking reduction</span>,{' '}
-                        <span className="font-medium text-stone-900">3.5x DB throughput</span> these things
-                        keep me up at night (in a good way).
+                        <span className="font-medium text-stone-900">
+                            8x render-blocking reduction
+                        </span>
+                        , <span className="font-medium text-stone-900">3.5x DB throughput</span>{' '}
+                        these things keep me up at night (in a good way).
                     </p>
                     <p>
-                        when i&apos;m not shipping code, you&apos;ll probably catch me playing badminton 🏸 or at chessboard ♟️ .
-                        the strategy, the patterns, the endgames it&apos;s not too different from system
-                        design, honestly.
+                        when i&apos;m not shipping code, you&apos;ll probably catch me playing
+                        badminton 🏸 or at chessboard ♟️ . the strategy, the patterns, the endgames
+                        it&apos;s not too different from system design, honestly.
                     </p>
                     <p>
-                        i&apos;m also exploring the Rust to build low-level systems for De-Fi platforms and intersection of AI with engineering for web2 products 
+                        i&apos;m also exploring the Rust to build low-level systems for De-Fi
+                        platforms and intersection of AI with engineering for web2 products
                     </p>
-                </section>
+                </section> */}
 
-                <div className="border-t border-stone-200" />
-
-                <section id="work" className="py-16">
-                    <p className="mb-8 text-xs font-medium uppercase tracking-widest text-stone-400">
-                        projects
-                    </p>
-                    <div className="space-y-12">
-                        {projects.map((project) => (
-                            <div key={project.name}>
-                                <div className="mb-2 flex items-start justify-between">
-                                    <h3 className="text-lg font-semibold text-stone-900">{project.name}</h3>
-                                    <div className="flex gap-3 text-sm">
-                                        {project.live && (
-                                            <a
-                                                href={project.live}
-                                                className="text-stone-400 transition-colors hover:text-amber-600"
-                                            >
-                                                live ↗
-                                            </a>
-                                        )}
-                                        <a
-                                            href={project.github}
-                                            className="text-stone-400 transition-colors hover:text-amber-600"
-                                        >
-                                            github ↗
-                                        </a>
-                                    </div>
-                                </div>
-                                <p className="mb-4 leading-relaxed text-stone-600">{project.description}</p>
-                                <div className="flex flex-wrap gap-2">
-                                    {project.tech.map((t) => (
-                                        <span
-                                            key={t}
-                                            className="rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs text-amber-700"
-                                        >
-                                            {t}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                <div className="border-t border-stone-200" />
-
-                <section className="py-16">
-                    <p className="mb-8 text-xs font-medium uppercase tracking-widest text-stone-400">
-                        writing
-                    </p>
-                    <a
-                        href="https://medium.com/@nihaljesiya/building-a-workflow-8f6837dfc69f"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group block overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition-all hover:border-amber-200 hover:shadow-md"
-                    >
-                        <div className="relative h-52 bg-gradient-to-br from-amber-50 via-stone-100 to-stone-200">
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="space-y-2 text-center">
-                                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-white/80 text-xl shadow-sm">
-                                        ⚙️
-                                    </div>
-                                    <p className="text-xs font-medium text-stone-400">medium article</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="p-6">
-                            <p className="mb-2 text-xs font-medium uppercase tracking-widest text-amber-600">
-                                workflow engineering
-                            </p>
-                            <h3 className="mb-2 text-lg font-semibold text-stone-900 transition-colors group-hover:text-amber-600">
-                                Workflow Builder | Reactflow | Redux
-                            </h3>
-                            <p className="text-sm leading-relaxed text-stone-500">
-                                A walkthrough of how we built and scaled an API orchestration tool from the
-                                ground up and the challenges we faced.
-                            </p>
-                            <span className="mt-4 inline-block text-sm font-medium text-amber-600">
-                                read on medium ↗
-                            </span>
-                        </div>
-                    </a>
-                </section>
+                {/* <div className="border-t border-stone-200" /> */}
 
                 <div className="border-t border-stone-200" />
 
                 <section id="contact" className="py-16">
-                    <p className="mb-6 text-xs font-medium uppercase tracking-widest text-stone-400">
+                    <p className="mb-6 text-xs font-medium tracking-widest text-stone-400 uppercase">
                         let&apos;s talk
                     </p>
                     <p className="mb-4 text-2xl font-bold tracking-tight text-stone-900">
                         got something interesting? i&apos;d love to hear it.
                     </p>
                     <p className="mb-8 text-stone-600">
-                        whether it&apos;s a project, an opportunity, or just a good chess puzzle; shoot me a
-                        message.
+                        whether it&apos;s a project, an opportunity, or just a good chess puzzle;
+                        shoot me a message.
                     </p>
                     <a
                         href="mailto:nihaljesiya@gmail.com"
@@ -199,13 +175,25 @@ export default function Page() {
                         nihaljesiya@gmail.com ↗
                     </a>
                     <div className="mt-8 flex gap-5 text-sm">
-                        <a target="_blank" href="https://github.com/Nihal-Ahamed-MS" className="text-stone-400 transition-colors hover:text-amber-600">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Nihal-Ahamed-MS"
+                            className="text-stone-400 transition-colors hover:text-amber-600"
+                        >
                             github
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/nihal-ahamed/" className="text-stone-400 transition-colors hover:text-amber-600">
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/nihal-ahamed/"
+                            className="text-stone-400 transition-colors hover:text-amber-600"
+                        >
                             linkedin
                         </a>
-                        <a target="_blank" href="https://x.com/NihalAh33111547" className="text-stone-400 transition-colors hover:text-amber-600">
+                        <a
+                            target="_blank"
+                            href="https://x.com/NihalAh33111547"
+                            className="text-stone-400 transition-colors hover:text-amber-600"
+                        >
                             twitter
                         </a>
                     </div>

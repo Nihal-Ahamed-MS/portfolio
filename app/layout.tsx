@@ -6,7 +6,7 @@ import './globals.css';
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Nihal Ahamed M S — Senior Software Engineer',
+    title: 'Nihal Ahamed — Senior Software Engineer',
     description:
         'Senior Software Engineer and Tech Lead building high-performance web systems and scalable backends.',
 };
