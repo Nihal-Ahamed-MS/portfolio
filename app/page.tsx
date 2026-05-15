@@ -55,7 +55,7 @@ export default function Page() {
                         bengaluru, india
                     </p>
                     <h1 className="mb-6 text-5xl font-bold tracking-tight text-stone-900">
-                        hi, i&apos;m nihal. 👋
+                        hi, i&apos;m nihal.
                     </h1>
                     <div className="space-y-4 text-lg leading-relaxed text-stone-600">
                         <p>
@@ -173,7 +173,7 @@ export default function Page() {
                                 ground up and the challenges we faced.
                             </p>
                             <span className="mt-4 inline-block text-sm font-medium text-amber-600">
-                                read on linkedin ↗
+                                read on medium ↗
                             </span>
                         </div>
                     </a>
