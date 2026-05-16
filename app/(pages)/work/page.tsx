@@ -29,6 +29,14 @@ const projects = [
         github: 'https://github.com/Nihal-Ahamed-MS/claude-guardian',
         live: undefined,
     },
+    {
+        id: 'council',
+        name: 'Council',
+        description: "a terminal chat app powered by LiteLLM Gateway. one brew install, all your favourite LLMs - no browser needed.",
+        tech: ['Javascript', 'Ink'],
+        github: 'https://github.com/Nihal-Ahamed-MS/council',
+        live: undefined,
+    },
 ];
 
 export default function WorkPage() {
