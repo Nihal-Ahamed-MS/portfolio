@@ -50,7 +50,7 @@ export default function Page() {
                             scale. right now i&apos;m at{' '}
                             <span className="font-semibold text-stone-900">apiwiz</span>, leading an
                             API orchestration platform that ships to 200+ customers across APAC and
-                            the Middle East and we made it into the{' '}
+                            the Middle East. My team&apos;s efforts got us into{' '}
                             <a
                                 href="https://www.gartner.com/document/7020998?ref=solrAll&refval=500152819&toggle=1&viewType=Full"
                                 target="_blank"
@@ -102,11 +102,11 @@ export default function Page() {
                                 style={{ width: 80, height: 55 }}
                             />
                         </a>{' '}
-                        Aristotle had it right — &ldquo;the whole is greater than the sum of its parts.&rdquo;
+                        Aristotle had it right  — &ldquo;the whole is greater than the sum of its parts.&rdquo;
                     </p>
 
                     <p className="leading-[2.2]" style={{ marginTop: "3rem" }}>
-                        if i am AFK (away from keyboard) you can find me at badminton or at chessboard.{' '}
+                        if i am AFK (away from keyboard) you can find me at badminton{' '}
                         <span className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
                             <Image
                                 src="/assets/badminton.jpg"
@@ -117,7 +117,7 @@ export default function Page() {
                                 style={{ width: 40, height: 50 }}
                             />
                         </span>{' '}
-                        the strategy, the patterns, the endgames it&apos;s not too different from
+                        or at chessboard. the strategy, the patterns, the endgames it&apos;s not too different from
                         system design, honestly.
                     </p>
 
@@ -126,7 +126,7 @@ export default function Page() {
                         <span className="inline-block align-middle mx-2">
                             <FolderAnimation />
                         </span>
-                        i've been building product around LLM to ease my development and helping community to building DeFi apps with Rust
+                        i've been building products around LLM to ease my development and learning Rust to build low-level systems as well
                     </p>
                 </section>
 
