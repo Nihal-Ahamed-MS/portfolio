@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import SoundProvider from './components/SoundProvider';
 import './globals.css';
 
@@ -21,6 +22,7 @@ export default function RootLayout({
             <body className="bg-[#faf9f6] text-stone-900 antialiased">
                 <SoundProvider />
                 {children}
+                <Analytics />
             </body>
         </html>
     );
