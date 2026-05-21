@@ -90,8 +90,7 @@ export default function Page() {
 
                 <section className="pb-12 space-y-4 text-2xl font-semibold leading-relaxed text-stone-800 [word-spacing:0.8rem]">
                     <p className="leading-[2]">
-                        i architect scalable application which makes developers love me more than
-                        their girlfriends. the best codebases i&apos;ve shipped were never written alone,{' '}
+                        i architect scalable applications that make developers fall harder than they&apos;d like to admit. the best codebases i&apos;ve shipped were never written alone,{' '}
                         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7279855739458727936/" target="_blank" rel="noopener noreferrer" className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
                             <Image
                                 src="/assets/team.jpeg"
