@@ -49,8 +49,8 @@ export default function Page() {
                             senior software engineer & tech lead with 4+ years building things that
                             scale. right now i&apos;m at{' '}
                             <span className="font-semibold text-stone-900">apiwiz</span>, leading an
-                            API orchestration platform that ships to 200+ customers across APAC and
-                            the Middle East. My team&apos;s efforts got us into{' '}
+                            API orchestration platform that ships to 10+ enterprise customers across APAC and
+                            the Middle East. And also my team&apos;s efforts got us into{' '}
                             <a
                                 href="https://www.gartner.com/document/7020998?ref=solrAll&refval=500152819&toggle=1&viewType=Full"
                                 target="_blank"
@@ -78,19 +78,19 @@ export default function Page() {
                             .
                         </p>
                     </div>
-                    <div className="mt-8 flex items-center gap-3">
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-green-200 bg-green-50 px-3 py-1 text-xs font-medium text-green-700">
-                            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                            open to opportunities
-                        </span>
-                    </div>
+                    <a href='https://www.linkedin.com/in/nihal-ahamed/' target='_blank' className="cursor-pointer mt-8 flex items-center gap-3 rounded-full border border-green-300 bg-green-50 px-4 py-2" style={{ width: "max-content", backgroundColor: "#cdf5d9" }}>
+                        <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                        <div className="inline-flex items-center gap-1.5 text-sm font-medium text-green-600">
+                             open to opportunities
+                        </div>
+                    </a>
                 </section>
 
                 <div className="border-t border-stone-200 pb-12" />
 
                 <section className="pb-12 space-y-4 text-2xl font-semibold leading-relaxed text-stone-800 [word-spacing:0.8rem]">
-                    <p className="leading-[2]">
-                        i architect scalable applications that make developers fall harder than they&apos;d like to admit. the best codebases i&apos;ve shipped were never written alone,{' '}
+                    <p className="leading-[2.3]">
+                        i architect applications that make developers fall harder than they&apos;d like to admit. the best codebases i&apos;ve shipped were never written alone,{' '}
                         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7279855739458727936/" target="_blank" rel="noopener noreferrer" className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
                             <Image
                                 src="/assets/team.jpeg"
@@ -104,8 +104,8 @@ export default function Page() {
                         Aristotle had it right  — &ldquo;the whole is greater than the sum of its parts.&rdquo;
                     </p>
 
-                    <p className="leading-[2.2]" style={{ marginTop: "3rem" }}>
-                        if i am AFK (away from keyboard) you can find me at badminton{' '}
+                    <p className="leading-[2.3]" style={{ marginTop: "3rem" }}>
+                        while i'm away you can find me at badminton{' '}
                         <span className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
                             <Image
                                 src="/assets/badminton.jpg"
@@ -120,8 +120,8 @@ export default function Page() {
                         system design, honestly.
                     </p>
 
-                    <p className="leading-[2.3]" style={{ marginTop: "3rem" }}>
-                        enough of bragging about myself, let&apos;s talk business{' '}
+                    <p className="leading-[2.3]" style={{ marginTop: "3.2rem" }}>
+                        okay, enough of bragging about myself, let&apos;s talk business{' '}
                         <span className="inline-block align-middle mx-2">
                             <FolderAnimation />
                         </span>
