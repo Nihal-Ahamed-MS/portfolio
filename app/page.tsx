@@ -159,13 +159,13 @@ export default function Page() {
                         >
                             linkedin
                         </a>
-                        <a
+                        {/* <a
                             target="_blank"
                             href="https://x.com/NihalAh33111547"
                             className="text-stone-400 transition-colors hover:text-amber-600"
                         >
                             twitter
-                        </a>
+                        </a> */}
                     </div>
                 </section>
             </main>
