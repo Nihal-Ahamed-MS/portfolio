@@ -46,51 +46,22 @@ export default function Page() {
                     </h1>
                     <div className="space-y-4 text-lg leading-relaxed text-stone-600">
                         <p className="">
-                            senior software engineer & tech lead with 4+ years building things that
-                            scale. right now i&apos;m at{' '}
-                            <span className="font-semibold text-stone-900">apiwiz</span>, leading an
-                            API orchestration platform that ships to 10+ enterprise customers across APAC and
-                            the Middle East. And also my team&apos;s efforts got us into{' '}
-                            <a
-                                href="https://www.gartner.com/document/7020998?ref=solrAll&refval=500152819&toggle=1&viewType=Full"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative font-medium text-amber-600"
-                            >
-                                gartner magic quadrant 2025
-                                <svg
-                                    className="pointer-events-none absolute -bottom-2.5 left-0 w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                                    height="10"
-                                    viewBox="0 0 200 10"
-                                    preserveAspectRatio="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M0,6 C5,2 12,9 22,5 C30,2 38,8 48,6 C57,3 63,8 74,5 C83,2 90,9 102,5 C111,2 119,8 130,6 C139,3 147,8 157,5 C165,2 174,9 184,5 C191,2 197,7 200,5"
-                                        fill="none"
-                                        stroke="#ccb41a"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
-                            </a>
-                            .
+                            a senior engineer who built developer tools which is now used by developers across APAC and Middle East
                         </p>
                     </div>
-                    <a href='https://www.linkedin.com/in/nihal-ahamed/' target='_blank' className="cursor-pointer mt-8 flex items-center gap-3 rounded-full border border-green-300 bg-green-50 px-4 py-2" style={{ width: "max-content", backgroundColor: "#cdf5d9" }}>
+                    {/* <a href='https://www.linkedin.com/in/nihal-ahamed/' target='_blank' className="cursor-pointer mt-8 flex items-center gap-3 rounded-full border border-green-300 bg-green-50 px-4 py-2" style={{ width: "max-content", backgroundColor: "#cdf5d9" }}>
                         <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
                         <div className="inline-flex items-center gap-1.5 text-sm font-medium text-green-600">
                              open to opportunities
                         </div>
-                    </a>
+                    </a> */}
                 </section>
 
                 <div className="border-t border-stone-200 pb-12" />
 
                 <section className="pb-12 space-y-4 text-2xl font-semibold leading-relaxed text-stone-800 [word-spacing:0.8rem]">
                     <p className="leading-[2.3]">
-                        i architect applications that make developers fall harder than they&apos;d like to admit. the best codebases i&apos;ve shipped were never written alone,{' '}
+                        right after my college i joined Apiwiz (a seed funded startup), where i started building a product from scratch for developers. 
                         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7279855739458727936/" target="_blank" rel="noopener noreferrer" className="inline-block overflow-hidden rounded-xl border-4 border-white shadow-md transition-transform duration-300 ease-out hover:scale-105 hover:rotate-1 cursor-pointer align-middle mx-1">
                             <Image
                                 src="/assets/team.jpeg"
@@ -101,7 +72,7 @@ export default function Page() {
                                 style={{ width: 80, height: 55 }}
                             />
                         </a>{' '}
-                        Aristotle had it right  — &ldquo;the whole is greater than the sum of its parts.&rdquo;
+                        Fast forward 4 years, now i'm senior engineer who is mentoring, building and shaping the product's future with an amazing team
                     </p>
 
                     <p className="leading-[2.3]" style={{ marginTop: "3rem" }}>
@@ -125,7 +96,7 @@ export default function Page() {
                         <span className="inline-block align-middle mx-2">
                             <FolderAnimation />
                         </span>
-                        i've been building products around LLM to ease my development and learning Rust to build low-level systems as well
+                        i've been building products around LLM to ease my development and to boost developer's productivity
                     </p>
                 </section>
 
